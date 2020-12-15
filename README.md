@@ -35,3 +35,13 @@ python manage.py migrate
 ```
 python mange.py runserver
 ```
+
+## API Structure
+- To access all the links with their category and subcategory info:
+```
+http://127.0.0.1:8000/chatbot
+```
+- To access a specific link through its category, subcategory and name:
+```
+http://127.0.0.1:8000/chatbot/category/sub-category/name
+```
