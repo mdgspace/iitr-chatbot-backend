@@ -3,12 +3,10 @@ from rest_framework import routers
 from chatbot import views
 
 router = routers.DefaultRouter()
-router.register(r'categories', views.CategoryList, basename='category-list')
-#router.register(r'^sub-categories/$', views.SubCategoryList, basename='sub-category-list')
-#router.register(r'links', views.LinksViewSet)
+router.register(r'chatbot', views.CategoryList, basename='Links')
+
 
 urlpatterns = [
     path('', include(router.urls)),
-    #path('sub-categories/', views.SubCategoryList.as_view()),
-    #path('links/', views.LinksList.as_view())
+    path('chatbot/<str:category_name>/<str:sub_category_name>/<str:link_name>', views.LinkView.as_view())
 ]
