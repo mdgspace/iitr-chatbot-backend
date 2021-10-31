@@ -35,6 +35,7 @@ python manage.py migrate
 ```
 python mange.py runserver
 ```
+- Navigate to http://localhost:8000 to see the backend server up and running!
 
 ## API Structure
 - To access all the links with their category and subcategory info:
@@ -45,3 +46,16 @@ http://127.0.0.1:8000/chatbot
 ```
 http://127.0.0.1:8000/chatbot/category/sub-category/name
 ```
+## For commit messages
+
+Please start your commits with these prefixes for better understanding among collaborators, based on the type of commit:
+
+    feat: (addition of a new feature)
+    rfac: (refactoring the code: optimization/ different logic of existing code - output doesn't change, just the way of execution changes)
+    docs: (documenting the code, be it readme, or extra comments)
+    bfix: (bug fixing)
+    chor: (chore - beautifying code, indents, spaces, camelcasing, changing variable names to have an appropriate meaning)
+    ptch: (patches - small changes in code, mainly UI, for example color of a button, incrasing size of tet, etc etc)
+    conf: (configurational settings - changing directory structure, updating gitignore, add libraries, changing manifest etc)
+
+
